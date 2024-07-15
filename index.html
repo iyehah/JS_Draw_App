@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="app-container">
+        <div class="sidebar">
+            <div class="control-group">
+                <label for="image-upload">Upload Image</label>
+                <input type="file" id="image-upload" accept="image/*">
+                <button class="file-upload">Choose File</button>
+            </div>
+            <div class="control-group">
+                <label for="pen-color">Pen Color</label>
+                <button class="color-btn" data-color="#000000" style="background-color: #000000;"></button>
+                <button class="color-btn" data-color="#ff0000" style="background-color: #ff0000;"></button>
+                <button class="color-btn" data-color="#00ff00" style="background-color: #00ff00;"></button>
+                <button class="color-btn" data-color="#0000ff" style="background-color: #0000ff;"></button>
+            </div>
+            <div class="control-group">
+                <label for="tools">Tools:</label>
+                <button id="draw-tool">Draw</button>
+                <button id="ruler-tool">Ruler</button>
+                <button id="move-image-tool">Move Image</button>
+            </div>
+            <div class="control-group">
+                <label for="shapes">Shapes:</label>
+                <button id="circle-tool">Circle</button>
+                <button id="square-tool">Square</button>
+                <button id="triangle-tool">Triangle</button>
+                <button id="star-tool">Star</button>
+            </div>
+            <div class="control-group">
+                <label for="text-input">Add Text:</label>
+                <input type="text" id="text-input" class="text-input" placeholder="Type text here...">
+                <button id="add-text">Add Text</button>
+            </div>
+        </div>
+        <div class="main-content">
+            <div class="canvas-container">
+                <canvas id="canvas" width="800" height="600"></canvas>
+            </div>
+        </div>
+        <div class="controls">
+            <div class="control-group">
+                <label for="save-options">Save Options:</label>
+                <button id="save-png">Save as PNG</button>
+                <button id="save-jpg">Save as JPG</button>
+                <button id="save-pdf">Save as PDF</button>
+            </div>
+        </div>
+    </div>
+
+<script src="main.js"></script>
+</body>
+</html>
